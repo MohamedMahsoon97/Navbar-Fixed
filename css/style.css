@@ -1,0 +1,162 @@
+*
+{
+  box-sizing : border-box;
+  margin:0px;
+  padding:0px;
+}
+body
+{
+  height:2000px;
+}
+/* start header */
+.navbar-fixed
+{
+    position: fixed !important;
+    background-color: rgb(14, 132, 241) !important;
+    color: #fff !important;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+.navbar-fixed .nav-center li a
+{
+    color:#fff !important;
+}
+.navbar .hide-input
+{
+    display: none;
+}
+.navbar label
+{
+    display: none;
+}
+.navbar
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    background-color: #ddd;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+.navbar .logo
+{
+    margin-left: 80px;
+}
+.navbar .logo img
+{
+    width: 160px;
+    padding: 29px;
+}
+.navbar div
+{
+    margin-right: 80px;
+    display: flex;
+}
+.navbar .nav-center li
+{
+    display: inline-block;
+    padding: 30px 20px;
+}
+.navbar .nav-center li a
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+.navbar .nav-center li a:hover
+{
+    border-bottom: 4px solid #eee;
+    padding-bottom: 30px;
+}
+.navbar .nav-right li
+{
+    display: inline-block;
+    padding: 30px 20px;
+}
+.navbar .nav-right li a
+{
+    color: #000;
+}
+/* end header */
+
+/* -------------------------- Start media query header section ------------------- */
+@media (max-width:767px) {
+    .navbar
+    {
+        width: 100%;
+    }
+    .navbar .logo
+    {
+        margin-left: 10px;
+    }
+    .navbar label
+    {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+    .navbar label i
+    {
+        padding: 5px;
+        font-size: 25px;
+        color: #fff;
+    }
+    .hide-input:checked ~ .nav-content .nav-center
+    {
+        opacity: 1;
+    }
+    .nav-content
+    {
+        width: 100%;
+        position: absolute;
+    }
+    .navbar .nav-center
+    {
+        z-index: 2;
+        opacity: 0;
+        background-color: #eee;
+        padding: 20px;
+        width: 90%;
+        margin-left: 5%;
+        position: absolute;
+        top: 70px;
+        transition: .6s ease-in-out;
+        -webkit-transition: .6s ease-in-out;
+        -moz-transition: .6s ease-in-out;
+        -ms-transition: .6s ease-in-out;
+        -o-transition: .6s ease-in-out;
+    }
+    .navbar .nav-center li
+    {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    .nav-center li a
+    {
+        color: black;
+        font-size: 19px;
+    }
+    .navbar .nav-right
+    {
+        position: absolute;
+        top: -5px;
+        right: 50px;
+    }
+}
+/* -------------------------- End media query header section --------------------- */
